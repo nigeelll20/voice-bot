@@ -45,7 +45,7 @@ function connectToVoice() {
     });
 }
 
-client.once('ready', () => {
+client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);
     connectToVoice();
 });
