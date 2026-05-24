@@ -10,8 +10,8 @@ const {
 } = require('@discordjs/voice');
 
 const TOKEN = process.env.TOKEN;
-const GUILD_ID = '1214379501543497829';
-const CHANNEL_ID = '1214381966913441803';
+const GUILD_ID = process.env.GUILD_ID;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 const client = new Client({
     intents: [
